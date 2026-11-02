@@ -1,0 +1,79 @@
+[
+  {
+    "utterance": "abrir agente otto",
+    "output": {
+      "body": {
+        "version": "1.0",
+        "response": {
+          "outputSpeech": {
+            "type": "SSML",
+            "ssml": "<speak>Olá! Eu sou o Agente Otto. Diga ativar teste de aviso para agendar um lembrete de teste daqui a um minuto, ou desativar avisos para cancelar os testes pendentes.</speak>"
+          },
+          "reprompt": {
+            "outputSpeech": {
+              "type": "SSML",
+              "ssml": "<speak>Olá! Eu sou o Agente Otto. Diga ativar teste de aviso para agendar um lembrete de teste daqui a um minuto, ou desativar avisos para cancelar os testes pendentes.</speak>"
+            }
+          },
+          "shouldEndSession": false,
+          "type": "_DEFAULT_RESPONSE"
+        },
+        "sessionAttributes": {},
+        "userAgent": "ask-node/2.14.0 Node/v16.20.2 agente-otto/reminders-poc/v1"
+      }
+    },
+    "privacyNote": "Evidência real com nome do destinatário removido; original preservado apenas localmente."
+  },
+  {
+    "utterance": "ativar teste de aviso",
+    "output": {
+      "body": {
+        "version": "1.0",
+        "response": {
+          "outputSpeech": {
+            "type": "SSML",
+            "ssml": "<speak>Posso criar um único lembrete para daqui a um minuto, dizendo: [destinatário], este é o aviso de teste do Agente Otto? Diga sim ou não.</speak>"
+          },
+          "reprompt": {
+            "outputSpeech": {
+              "type": "SSML",
+              "ssml": "<speak>Deseja criar esse lembrete de teste para daqui a um minuto?</speak>"
+            }
+          },
+          "shouldEndSession": false,
+          "type": "_DEFAULT_RESPONSE"
+        },
+        "sessionAttributes": {
+          "pendingTestReminder": true
+        },
+        "userAgent": "ask-node/2.14.0 Node/v16.20.2 agente-otto/reminders-poc/v1"
+      }
+    },
+    "privacyNote": "Evidência real com nome do destinatário removido; original preservado apenas localmente."
+  },
+  {
+    "utterance": "não",
+    "output": {
+      "body": {
+        "version": "1.0",
+        "response": {
+          "outputSpeech": {
+            "type": "SSML",
+            "ssml": "<speak>Nenhum novo lembrete foi criado. Para cancelar um teste já agendado, diga desativar avisos.</speak>"
+          },
+          "reprompt": {
+            "outputSpeech": {
+              "type": "SSML",
+              "ssml": "<speak>Você pode dizer desativar avisos ou sair.</speak>"
+            }
+          },
+          "shouldEndSession": false,
+          "type": "_DEFAULT_RESPONSE"
+        },
+        "sessionAttributes": {},
+        "userAgent": "ask-node/2.14.0 Node/v16.20.2 agente-otto/reminders-poc/v1"
+      }
+    },
+    "privacyNote": "Evidência real com nome do destinatário removido; original preservado apenas localmente."
+  }
+]

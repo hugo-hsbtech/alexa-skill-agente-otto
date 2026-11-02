@@ -1,0 +1,10 @@
+.env
+.env.*
+!.env-sample
+node_modules/
+*.log
+.ask/
+.aws/
+cookies*.json
+credentials*
+.local/

@@ -1,0 +1,73 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "agente otto",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "HelloWorldIntent",
+          "slots": [],
+          "samples": [
+            "olá",
+            "como vai você",
+            "diga oi mundo",
+            "diga oi",
+            "oi",
+            "diga olá mundo",
+            "diga olá"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "ActivateAlertsIntent",
+          "slots": [],
+          "samples": [
+            "ativar teste de aviso",
+            "ativar avisos",
+            "ativar o teste de aviso",
+            "pode me chamar",
+            "estou disponível",
+            "estou na ativa",
+            "testar aviso",
+            "teste de aviso"
+          ]
+        },
+        {
+          "name": "DisableAlertsIntent",
+          "slots": [],
+          "samples": [
+            "desativar avisos",
+            "desativar o aviso",
+            "cancelar aviso",
+            "cancelar teste",
+            "não me chame",
+            "ficar em silêncio"
+          ]
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": []
+        }
+      ],
+      "types": []
+    }
+  }
+}

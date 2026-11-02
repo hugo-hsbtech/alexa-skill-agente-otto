@@ -1,0 +1,54 @@
+[
+  {
+    "utterance": "ativar teste de aviso",
+    "output": {
+      "body": {
+        "version": "1.0",
+        "response": {
+          "outputSpeech": {
+            "type": "SSML",
+            "ssml": "<speak>Posso criar um único lembrete para daqui a um minuto, dizendo: [destinatário], este é o aviso de teste do Agente Otto? Diga sim ou não.</speak>"
+          },
+          "reprompt": {
+            "outputSpeech": {
+              "type": "SSML",
+              "ssml": "<speak>Deseja criar esse lembrete de teste para daqui a um minuto?</speak>"
+            }
+          },
+          "shouldEndSession": false,
+          "type": "_DEFAULT_RESPONSE"
+        },
+        "sessionAttributes": {
+          "pendingTestReminder": true
+        },
+        "userAgent": "ask-node/2.14.0 Node/v16.20.2 agente-otto/reminders-poc/v1"
+      }
+    },
+    "privacyNote": "Evidência real com nome do destinatário removido; original preservado apenas localmente."
+  },
+  {
+    "utterance": "sim",
+    "output": {
+      "body": {
+        "version": "1.0",
+        "response": {
+          "outputSpeech": {
+            "type": "SSML",
+            "ssml": "<speak>Para criar ou cancelar o aviso de teste, preciso da permissão de lembretes. Abra o aplicativo Alexa e autorize os lembretes do Agente Otto no cartão de permissões. Depois abra a Skill e peça o teste novamente.</speak>"
+          },
+          "card": {
+            "type": "AskForPermissionsConsent",
+            "permissions": [
+              "alexa::alerts:reminders:skill:readwrite"
+            ]
+          },
+          "shouldEndSession": true,
+          "type": "_DEFAULT_RESPONSE"
+        },
+        "sessionAttributes": {},
+        "userAgent": "ask-node/2.14.0 Node/v16.20.2 agente-otto/reminders-poc/v1"
+      }
+    },
+    "privacyNote": "Evidência real com nome do destinatário removido; original preservado apenas localmente."
+  }
+]
